@@ -1,7 +1,7 @@
-extends Camera
+extends Camera3D
 
-export(NodePath) var VehiclePath
-onready var Vehicle = get_node(VehiclePath)
+@export var VehiclePath: NodePath
+@onready var Vehicle = get_node(VehiclePath)
 
 var VehicleRigidBody = null
 
@@ -16,5 +16,5 @@ func _physics_process(_delta):
 	VehiclePosition = VehicleRigidBody.get_global_transform().origin
 	VehiclePosition.y += 10
 	VehiclePosition.x -= 10
-	self.set_translation(VehiclePosition)
+	self.set_position(VehiclePosition)
 

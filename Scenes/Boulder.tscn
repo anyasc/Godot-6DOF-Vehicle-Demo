@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dr3yn8ph7pd8a"]
+
+[ext_resource type="Script" uid="uid://dn6v6220lmq6" path="res://Scripts/boulder.gd" id="1_6nous"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_uxj1f"]
+radius = 1.36
+
+[sub_resource type="SphereMesh" id="9"]
+resource_local_to_scene = true
+radius = 1.0
+height = 2.0
+radial_segments = 6
+rings = 4
+
+[node name="Boulder" type="RigidBody3D" unique_id=831437424]
+freeze = true
+script = ExtResource("1_6nous")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=866597364]
+shape = SubResource("SphereShape3D_uxj1f")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1748608341]
+mesh = SubResource("9")

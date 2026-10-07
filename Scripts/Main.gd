@@ -1,7 +1,7 @@
-extends Spatial
+extends Node3D
 
-onready var Camera01 = $Camera01
-onready var Camera02 = $Camera02
+@onready var Camera01 = $Camera01
+@onready var Camera02 = $Camera02
 
 var Camera01Current = false
 
