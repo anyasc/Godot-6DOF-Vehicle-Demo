@@ -192,7 +192,7 @@ radius = 1.495
 
 [node name="Boulder18" parent="Ramps&Obstacles/Boulders" unique_id=1617466123 instance=ExtResource("4_lgr22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.51956, 0.44404417, 29.822)
-radius = 1.3599999999999999
+radius = 1.36
 
 [node name="Boulder16" parent="Ramps&Obstacles/Boulders" unique_id=2144070001 instance=ExtResource("4_lgr22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.713394, -0.18449754, 35.004784)
